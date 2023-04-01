@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //定义一个数组，随机生成10-20之间的数，10个数组元素,然后计算里面出现的奇数偶数个数
+        var arr=[];
+        var count1=0;
+        var count2=0;
+        for(var i=0;i<=9;i++){
+            arr[i]=parseInt(Math.random()*(20+1-10)+10);
+            if(arr[i]%2==0){
+                count2++
+            }else{
+                count1++
+            }
+        }
+        console.log(arr);
+        console.log(`奇数的个数为${count1},偶数的个数为${count2}`);
+    </script>
+</body>
+</html>
