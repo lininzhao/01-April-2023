@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var arr=[
+            {
+                name:'lihua',
+                age:12,
+                salary:2000
+            },
+            {
+                name:'xiaoming',
+                age:25,
+                salary:3000
+            },
+            {
+                name:'libai',
+                age:40,
+                salary:2000
+            },
+            {
+                name:'lili',
+                age:30,
+                salary:2000
+            }
+        ];
+        //按照年龄排序
+        // arr.sort(function(a,b){
+        //     // return a.age-b.age;//按照年龄的升序排列
+        //     //return b.age-a.age;//按照降序排列
+        //     return a.salary-b.salary;
+
+        // })
+
+        //先按照工资升序排序，如果工资相等，按照年龄降序排序
+        arr.sort(function(a,b){
+            if(a.salary==b.salary){
+                return b.age-a.age;
+            }
+            return a.salary-b.salary
+        })
+        console.log(arr);
+    </script>
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <script>
+    //求下列数组中薪水的最大值和年龄的最小值
+    var arr=[
+        {
+            name:'libai',
+            age:29,
+            salary:3000
+        },
+        {
+            name:'lihua',
+            age:25,
+            salary:2000
+        },
+        {
+            name:'xiaoming',
+            age:27,
+            salary:1000
+        }
+    ];
+    //拿到薪水
+    for(var i=0;i<arr.length;i++){
+       console.log(arr[i].salary); 
+       //判断最大值
+       var max=arr[0].salary;
+       if(max<arr[i].salary){
+        max=arr[i].salary
+       }
+    }
+    console.log(max);
+    console.log('-----------------------------')
+
+    //拿到年龄
+    for(var j=0;j<arr.length;j++){
+        // console.log(arr[j].age);
+        //判断年龄最小值
+        var min=arr[0].age;
+        if(min>arr[j].age){
+            min=arr[j].age;
+        }
+    }
+    console.log(min);
+   </script> 
+</body>
+</html>
